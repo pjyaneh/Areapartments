@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip"
+    tools:context=".MapsActivity">
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="15dp"
+
+        android:layout_alignBottom="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@drawable/red_style"
+            style="@style/Font_family_regular"
+            android:id="@+id/bed1btn"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 bedroom"/>
+        <Button
+            android:background="@drawable/brown_style"
+            style="@style/Font_family_regular"
+            android:id="@+id/bed2btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="2 bedrooms"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_style"
+            style="@style/Font_family_regular"
+            android:id="@+id/bed3btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 bedrooms"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Areapartments</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="sms_notification">Gusto ko na</string>
+</resources>

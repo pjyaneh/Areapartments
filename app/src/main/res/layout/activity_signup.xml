@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient1">
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".4"
+            android:background="@drawable/background_fade">
+
+        </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_16"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginTop="@dimen/margin_top_16"
+                android:layout_marginBottom="@dimen/margin_bottom_16"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Email"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:background="@drawable/edit_style"
+                    android:hint="Password"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+
+                <EditText
+                    android:drawableLeft="@drawable/password"
+                    android:id="@+id/editTextConfirmPassword"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="@dimen/padding_16"
+                    android:background="@drawable/edit_style"
+                    android:hint="Confirm Password"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+                <EditText
+                    android:id="@+id/regName"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:background="@drawable/edit_style"
+                    android:hint="Name"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+
+
+
+                <EditText
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:id="@+id/regNumber"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/edit_style"
+
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Phone Number"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20"
+                    />
+
+
+                <EditText
+                    android:drawableLeft="@drawable/ic_loc"
+                    android:enabled="false"
+                    android:id="@+id/regLatitude"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="@dimen/padding_16"
+                    android:background="@drawable/edit_style"
+                    android:hint="Latitude"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+                <EditText
+                    android:drawableLeft="@drawable/ic_loc"
+                    android:enabled="false"
+                    android:id="@+id/regLongitude"
+                    style="@style/Font_family_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/edit_style"
+
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Longitude"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:text="Note: Tap the 'Get Current Location' \nto get the latitude and longitude values"
+                    style="@style/Font_family_light"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/getLatLng"
+                    style="@style/Font_family_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:background="@drawable/blue_style"
+                    android:text="Get Current Location"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        style="@style/Font_family_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:drawablePadding="@dimen/padding_16"
+
+                        android:text="How many bedrooms:"
+                        android:layout_marginTop="@dimen/margin_top_8"
+                        android:layout_marginBottom="@dimen/margin_top_8"
+                        android:layout_marginLeft="@dimen/margin_right_16"
+
+
+                        android:padding="@dimen/padding_16"
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/text_20" />
+
+                    <Spinner
+                        android:layout_gravity="center"
+                        android:id="@+id/spinner1"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    style="@style/Font_family_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:background="@drawable/red_style"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/progressbar"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_16"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_16"
+                    android:layout_marginBottom="@dimen/margin_bottom_16"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

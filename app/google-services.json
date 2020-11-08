@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "519198694487",
+    "firebase_url": "https://areapartments.firebaseio.com",
+    "project_id": "areapartments",
+    "storage_bucket": "areapartments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519198694487:android:ed757108538e1b75",
+        "android_client_info": {
+          "package_name": "com.example.areapartments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519198694487-f43afnfp1d841s7vo7rkcj12b5c3qev1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.areapartments",
+            "certificate_hash": "0f5b9459d6a2184a78645bdd5ee41fcd6fe6f665"
+          }
+        },
+        {
+          "client_id": "519198694487-o896i0kefpev8f5ab9lfbvuppub4sbug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk3MxrM8EzY5Y8TKL5sM0t3mOsajMp6oY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519198694487-o896i0kefpev8f5ab9lfbvuppub4sbug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
